@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EB02C1052378F98700F391F7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB02C1042378F98700F391F7 /* main.cpp */; };
+		EB02C10F2378FAA200F391F7 /* gameboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB02C10D2378FAA200F391F7 /* gameboard.cpp */; };
+		EB02C113237917FF00F391F7 /* cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB02C111237917FF00F391F7 /* cell.cpp */; };
+		EB5F31FA237E649700309DD6 /* solver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB5F31F8237E649700309DD6 /* solver.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		EB02C1012378F98700F391F7 /* sudoku-solver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "sudoku-solver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB02C1042378F98700F391F7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EB02C10D2378FAA200F391F7 /* gameboard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gameboard.cpp; sourceTree = "<group>"; };
+		EB02C10E2378FAA200F391F7 /* gameboard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gameboard.hpp; sourceTree = "<group>"; };
+		EB02C111237917FF00F391F7 /* cell.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cell.cpp; sourceTree = "<group>"; };
+		EB02C112237917FF00F391F7 /* cell.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cell.hpp; sourceTree = "<group>"; };
+		EB5F31F8237E649700309DD6 /* solver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = solver.cpp; sourceTree = "<group>"; };
+		EB5F31F9237E649700309DD6 /* solver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = solver.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +66,39 @@
 		EB02C1032378F98700F391F7 /* sudoku-solver */ = {
 			isa = PBXGroup;
 			children = (
+				EB5F31F7237E647700309DD6 /* solver */,
+				EB02C110237917D900F391F7 /* cell */,
+				EB02C10C2378FA8200F391F7 /* gameboard */,
 				EB02C1042378F98700F391F7 /* main.cpp */,
 			);
 			path = "sudoku-solver";
+			sourceTree = "<group>";
+		};
+		EB02C10C2378FA8200F391F7 /* gameboard */ = {
+			isa = PBXGroup;
+			children = (
+				EB02C10D2378FAA200F391F7 /* gameboard.cpp */,
+				EB02C10E2378FAA200F391F7 /* gameboard.hpp */,
+			);
+			path = gameboard;
+			sourceTree = "<group>";
+		};
+		EB02C110237917D900F391F7 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				EB02C111237917FF00F391F7 /* cell.cpp */,
+				EB02C112237917FF00F391F7 /* cell.hpp */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		EB5F31F7237E647700309DD6 /* solver */ = {
+			isa = PBXGroup;
+			children = (
+				EB5F31F8237E649700309DD6 /* solver.cpp */,
+				EB5F31F9237E649700309DD6 /* solver.hpp */,
+			);
+			path = solver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB02C10F2378FAA200F391F7 /* gameboard.cpp in Sources */,
 				EB02C1052378F98700F391F7 /* main.cpp in Sources */,
+				EB5F31FA237E649700309DD6 /* solver.cpp in Sources */,
+				EB02C113237917FF00F391F7 /* cell.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
